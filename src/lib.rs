@@ -66,7 +66,7 @@ mod tests {
     // cargo test --features dev -- --nocapture
     #[tokio::test]
     async fn test_get_account_info() {
-        let client = HeliusClient::new("945100da-05f7-4e19-9c1c-ce0778de6ef7".to_string()).unwrap();
+        let client = HeliusClient::new("".to_string()).unwrap();
         let response = client
             .get_account_info("ATrkCHG6PnkhVNaVz9tekg4je5cvZcLuZuF5UAxxEvyK".to_string())
             .await
